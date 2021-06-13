@@ -6,7 +6,6 @@ import {
   webPortfolio,
   mobilePortfolio,
   designPortfolio,
-  contentPortfolio,
 } from "../../data";
 
 export default function Portfolio() {
@@ -15,24 +14,21 @@ export default function Portfolio() {
   const list = [
     {
       id: "featured",
-      title: "Featured",
+      title: "FEATURED",
     },
     {
       id: "web",
-      title: "Web App",
+      title: "FRONT-END",
     },
     {
       id: "mobile",
-      title: "Mobile App",
+      title: "BACK-END",
     },
     {
       id: "design",
-      title: "Design",
+      title: "FULL-STACK",
     },
-    {
-      id: "content",
-      title: "Content",
-    },
+  
   ];
 
   useEffect(() => {
@@ -48,9 +44,6 @@ export default function Portfolio() {
         break;
       case "design":
         setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
         break;
       default:
         setData(featuredPortfolio);
@@ -78,6 +71,10 @@ export default function Portfolio() {
               alt=""
             />
             <h3>{d.title}</h3>
+            <h4>{d.tech}</h4>
+            <button>
+            <a href="http://github.com">{d.url}</a>
+            </button>
           </div>
         ))}
       </div>
