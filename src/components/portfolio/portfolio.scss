@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .portfolio {
-  background-color: rgb(220, 220, 220);
+  background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,6 +9,7 @@
   h1 {
     font-size: 60px;
     margin-bottom: 40px;
+    margin-top: 40px;
     text-decoration: wavy;
 
     @include mobile {
@@ -44,7 +45,7 @@
 
     .item {
       width: 350px;
-      height: 260px;
+      height: 280px;
       border-radius: 20px;
       border: 1px solid rgb(240, 239, 239);
       margin: 10px 20px;
